@@ -1,0 +1,22 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Entornos virtuales
+analisis_datos_env/
+venv/
+env/
+
+# Archivos del sistema
+__pycache__/
+.DS_Store
+
+# Carpetas accidentales
+git/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Configuración local
+.vscode/
+.idea/
