@@ -1,4 +1,4 @@
-# Análisis Exploratorio de Datos – E-commerce
+# Análisis Exploratorio de Datos (EDA)
 
 **Curso: Análisis de Datos y Estadística | Mes 2 – Semana 1**
 
@@ -6,28 +6,28 @@
 
 ## Descripción
 
-Este repositorio documenta el trabajo realizado durante la **Semana 1: Análisis Exploratorio de Datos (EDA)**,
-aplicado a un dataset de ventas de comercio electrónico generado con fines educativos.
+Este repositorio documenta el trabajo realizado durante la **Semana 1 de Análisis Exploratorio de Datos (EDA)**, aplicando técnicas de exploración, estadística descriptiva y visualización sobre distintos datasets simulados con fines educativos.
 
-El enfoque principal fue comprender la estructura, calidad y patrones de los datos antes de aplicar
-modelos estadísticos o inferenciales.
+El objetivo general del proyecto es **comprender la estructura, calidad, distribución y patrones de los datos** antes de aplicar modelos estadísticos o inferenciales.
 
 ---
 
-## Objetivos del análisis
+## Objetivos generales del análisis
 
-- Comprender la estructura del dataset
+- Comprender la estructura de los datasets
 - Evaluar la calidad de los datos (tipos, valores faltantes, duplicados)
-- Identificar patrones iniciales de comportamiento
-- Generar preguntas relevantes para análisis posteriores
-- Crear visualizaciones claras como evidencia del EDA
+- Analizar el comportamiento central y la dispersión de las variables
+- Identificar patrones y posibles valores atípicos
+- Formular preguntas relevantes para análisis posteriores
+- Comunicar resultados mediante visualizaciones claras
 
 ---
 
-## Dataset
+## Datasets utilizados
 
-El conjunto de datos simula ventas de un e-commerce e incluye:
+Durante la semana se trabajó con los siguientes conjuntos de datos simulados:
 
+### Dataset E-commerce
 - Identificadores de pedidos, clientes y productos
 - Cantidad y precio unitario
 - Fecha del pedido
@@ -35,77 +35,76 @@ El conjunto de datos simula ventas de un e-commerce e incluye:
 - Edad del cliente
 - Región de envío
 
-**Nota:** Los datos son simulados y se utilizan exclusivamente con fines académicos.
+### Dataset Empleados
+- ID del empleado
+- Edad
+- Salario
+- Años de experiencia
+- Departamento
+- Nivel jerárquico
+
+**Nota:** Todos los datasets son simulados y se utilizan exclusivamente con fines académicos.
 
 ---
 
-## Proceso de Análisis Exploratorio
+## Desarrollo del Análisis Exploratorio
 
-> Este proceso se desarrolló progresivamente durante la semana.  
-> A continuación, se detalla el trabajo correspondiente al Día 1.
+### Día 1 – Inspección inicial y calidad de datos (E-commerce)
 
-### Inspección inicial
+Durante el **Día 1** se realizó el primer acercamiento al dataset de e-commerce, enfocándose en comprender su estructura general y evaluar la calidad de los datos.
 
-- Dimensiones del dataset
-- Tipos de datos
-- Rango temporal de los pedidos
+#### Actividades realizadas
+- Carga y configuración del entorno de análisis
+- Inspección de dimensiones y tipos de datos
+- Análisis de valores faltantes y consistencia
+- Revisión de rangos lógicos
+- Exploración inicial mediante visualizaciones
 
-### Análisis de calidad de datos
+#### Resultados destacados
+- Dataset con **1000 registros y 9 variables**
+- Valores faltantes concentrados en la variable **edad del cliente**
+- No se detectaron valores fuera de rangos lógicos en precios y cantidades
+- Distribuciones equilibradas por región y método de pago
 
-- Identificación de valores faltantes
-- Evaluación de completitud
-- Validación de rangos lógicos
-- Análisis de valores únicos
-
-### Preguntas exploratorias
-
-- Distribución de pedidos por región
-- Métodos de pago más utilizados
-- Distribución de edad de los clientes
-- Gasto promedio por grupo etario
-- Ingresos totales por región
-
----
-
-## Día 1 – Inspección inicial y calidad de datos
-
-Durante el **Día 1** se realizó el primer acercamiento al conjunto de datos, con el objetivo de
-comprender su estructura general y evaluar su calidad antes de avanzar hacia análisis más profundos.
-
-### Actividades realizadas
-
-- Carga y configuración inicial del entorno de análisis
-- Inspección de dimensiones, tipos de datos y rango temporal
-- Identificación y análisis de valores faltantes
-- Revisión de valores únicos y consistencia de las variables
-- Formulación de preguntas exploratorias iniciales
-
-### Resultados destacados
-
-- El dataset presenta **1000 registros y 9 variables**
-- Los valores faltantes se concentran en la variable **edad del cliente**
-- No se detectaron valores fuera de rangos lógicos definidos para precios y cantidades
-- La distribución por región y método de pago es relativamente equilibrada
-
-### Evidencia
-
+#### Evidencia
 - `eda_ecommerce_dia1.ipynb`
 - `distribucion_metodo_pago.png`
 - `distribucion_region.png`
-- `gasto_promedio_por_edad.png`
 - `histograma_edad_clientes.png`
+- `gasto_promedio_por_edad.png`
 - `Evidencia_EDA_Ecommerce.xlsx`
 
 ---
 
-## Visualizaciones generadas
+### Día 2 – Análisis estadístico descriptivo (Empleados)
 
-Las siguientes visualizaciones se generaron como imágenes para una comunicación clara de resultados durante el Día 1 del análisis:
+Durante el **Día 2** se profundizó el EDA mediante el uso de **estadística descriptiva**, analizando el comportamiento central, la dispersión y la distribución de las variables numéricas, así como comparaciones por categorías.
 
-- Distribución de pedidos por región
-- Distribución por método de pago
-- Histograma de edad de clientes
-- Gasto promedio por grupo de edad
+#### Análisis realizados
+- Medidas de tendencia central: media, mediana y moda
+- Medidas de dispersión: rango, varianza, desviación estándar y coeficiente de variación
+- Análisis de percentiles y rango intercuartílico (IQR)
+- Identificación de valores atípicos
+- Comparaciones por departamento y nivel jerárquico
+
+#### Visualizaciones generadas
+- Salario promedio por departamento (gráfico de barras)
+- Boxplots de:
+  - Edad
+  - Salario
+  - Años de experiencia
+- Composición de empleados por departamento (gráfico circular)
+- Composición del salario total por nivel (gráfico circular)
+
+#### Evidencia
+- `eda_empleados_dia2.ipynb`
+- `salario_promedio_departamento.png`
+- `boxplot_edad.png`
+- `boxplot_salario.png`
+- `boxplot_anios_experiencia.png`
+- `composicion_empleados_departamento.png`
+- `composicion_salarial_nivel.png`
+- `Evidencia_EDA_Dia2.xlsx`
 
 ---
 
@@ -129,9 +128,18 @@ analisis-exploratorio-datos/
 ├── .gitignore  
 │  
 ├── eda_ecommerce_dia1.ipynb  
+├── eda_empleados_dia2.ipynb  
+│  
 ├── Evidencia_EDA_Ecommerce.xlsx  
+├── Evidencia_EDA_Dia2.xlsx  
 │  
 ├── distribucion_region.png  
 ├── distribucion_metodo_pago.png  
 ├── histograma_edad_clientes.png  
 ├── gasto_promedio_por_edad.png  
+├── salario_promedio_departamento.png  
+├── boxplot_edad.png  
+├── boxplot_salario.png  
+├── boxplot_anios_experiencia.png  
+├── composicion_empleados_departamento.png  
+├── composicion_salarial_nivel.png 
