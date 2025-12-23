@@ -108,6 +108,70 @@ Durante el **Día 2** se profundizó el EDA mediante el uso de **estadística de
 
 ---
 
+### Día 3 – Análisis de distribuciones y valores atípicos (Dataset financiero)
+
+Durante el **Día 3** se realizó un análisis profundo de la **forma de las distribuciones**, la **asimetría**, la **curtosis** y la **detección sistemática de valores atípicos**, utilizando un dataset financiero simulado de transacciones.
+
+El objetivo principal fue comprender cómo la forma de la distribución afecta la interpretación de las medidas estadísticas y distinguir entre valores atípicos estructurales del negocio y posibles errores de medición.
+
+#### Dataset utilizado
+El conjunto de datos representa **2000 transacciones financieras** e incluye las siguientes variables:
+
+- ID de transacción
+- Monto de la transacción
+- Tipo de cliente (Regular, Premium, VIP)
+- Categoría del gasto (Alimentos, Electrónicos, Ropa, Servicios)
+
+**Nota:** El dataset es simulado y se utiliza exclusivamente con fines académicos.
+
+---
+
+#### Análisis realizados
+
+##### Análisis de distribuciones
+- Evaluación visual mediante histogramas
+- Comparación entre media y mediana
+- Identificación de sesgo positivo en los montos de transacción
+- Análisis de concentración y dispersión de los datos
+
+##### Medidas de forma
+- Cálculo de **asimetría (skewness)** para evaluar la simetría de la distribución
+- Cálculo de **curtosis** para analizar la presencia de colas pesadas y valores extremos
+- Interpretación del impacto de estas medidas en la media y la mediana
+- Justificación del uso de la mediana como medida robusta frente a distribuciones asimétricas
+
+##### Detección de valores atípicos
+- Identificación de outliers mediante:
+  - Método del rango intercuartílico (IQR)
+  - Método Z-Score
+- Comparación entre ambos métodos
+- Análisis de diferencias en la cantidad de outliers detectados
+- Evaluación de outliers como transacciones válidas de clientes premium
+
+##### Análisis por categorías
+- Comparación estadística de montos por categoría de consumo
+- Análisis por tipo de cliente (Regular, Premium, VIP)
+- Evaluación de diferencias en comportamiento y dispersión entre segmentos
+
+---
+
+#### Visualizaciones generadas
+- Histograma de montos de transacción con media y mediana
+- Boxplot de montos para identificación visual de outliers
+- Gráfico de distribución para analizar la curtosis y la concentración de valores alrededor de la media
+
+---
+
+#### Evidencia
+- `eda_financiero_dia3.ipynb`
+- `distribucion_montos.png`
+- `boxplot_montos.png`
+- `distribucion_curtosis_montos.png`
+- `Evidencia_Dia3_Analisis_Distribuciones.xlsx`
+
+---
+
+
 ## Herramientas utilizadas
 
 - Python
@@ -129,17 +193,24 @@ analisis-exploratorio-datos/
 │  
 ├── eda_ecommerce_dia1.ipynb  
 ├── eda_empleados_dia2.ipynb  
+├── eda_financiero_dia3.ipynb  
 │  
 ├── Evidencia_EDA_Ecommerce.xlsx  
 ├── Evidencia_EDA_Dia2.xlsx  
+├── Evidencia_Dia3_Analisis_Distribuciones.xlsx  
 │  
 ├── distribucion_region.png  
 ├── distribucion_metodo_pago.png  
 ├── histograma_edad_clientes.png  
 ├── gasto_promedio_por_edad.png  
+│  
 ├── salario_promedio_departamento.png  
 ├── boxplot_edad.png  
 ├── boxplot_salario.png  
 ├── boxplot_anios_experiencia.png  
 ├── composicion_empleados_departamento.png  
-├── composicion_salarial_nivel.png 
+├── composicion_salarial_nivel.png  
+│  
+├── distribucion_montos.png  
+├── boxplot_montos.png  
+├── distribucion_curtosis_montos.png 
