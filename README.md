@@ -25,9 +25,9 @@ El objetivo general del proyecto es **comprender la estructura, calidad, distrib
 
 ## Datasets utilizados
 
-Durante la semana se trabajó con los siguientes conjuntos de datos simulados:
+Durante la semana se trabajó con **distintos conjuntos de datos simulados**, cada uno asociado a un objetivo específico dentro del Análisis Exploratorio de Datos (EDA).
 
-### Dataset E-commerce
+### Dataset E-commerce (Día 1)
 - Identificadores de pedidos, clientes y productos
 - Cantidad y precio unitario
 - Fecha del pedido
@@ -35,7 +35,7 @@ Durante la semana se trabajó con los siguientes conjuntos de datos simulados:
 - Edad del cliente
 - Región de envío
 
-### Dataset Empleados
+### Dataset Empleados (Día 2)
 - ID del empleado
 - Edad
 - Salario
@@ -44,6 +44,8 @@ Durante la semana se trabajó con los siguientes conjuntos de datos simulados:
 - Nivel jerárquico
 
 **Nota:** Todos los datasets son simulados y se utilizan exclusivamente con fines académicos.
+
+Adicionalmente, durante los **Días 3 y 4** se utilizaron datasets específicos para el análisis de **distribuciones, valores atípicos y correlaciones**, los cuales se describen en detalle en sus respectivas secciones.
 
 ---
 
