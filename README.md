@@ -171,6 +171,128 @@ El conjunto de datos representa **2000 transacciones financieras** e incluye las
 
 ---
 
+### Día 4 – Análisis de correlaciones y relaciones entre variables (Dataset estudiantil)
+
+Durante el **Día 4** se realizó un **análisis de correlaciones** sobre un dataset estudiantil simulado, con el objetivo de **identificar relaciones lineales entre variables académicas, de bienestar y socioeconómicas**, así como evaluar su intensidad y dirección.
+
+El foco principal fue **comprender qué factores se relacionan con el rendimiento académico**, representado por el promedio de calificaciones, y cómo interactúan entre sí las distintas dimensiones del dataset.
+
+---
+
+#### Dataset utilizado
+
+El conjunto de datos representa información de estudiantes e incluye las siguientes variables:
+
+- ID del estudiante  
+- Edad  
+- Horas de estudio semanal  
+- Asistencia a clases  
+- Horas dedicadas a actividades extracurriculares  
+- Nivel de estrés  
+- Satisfacción con la vida  
+- Ingresos familiares  
+- Nivel socioeconómico  
+- Promedio de calificaciones  
+
+**Nota:** El dataset es simulado y se utiliza exclusivamente con fines académicos.
+
+---
+
+#### Análisis realizados
+
+##### Análisis descriptivo inicial
+
+Antes de realizar el análisis de correlaciones, se generaron visualizaciones descriptivas para **comprender la composición general del dataset**:
+
+- Distribución de edades de los estudiantes  
+- Distribución de horas de estudio semanal  
+- Composición del nivel socioeconómico  
+
+Este paso permitió establecer una narrativa inicial y contextualizar los resultados posteriores.
+
+---
+
+##### Correlación con el promedio de calificaciones
+
+- Cálculo del coeficiente de correlación de Pearson entre las variables numéricas  
+- Ordenamiento de las variables según su relación con el promedio de calificaciones  
+- Clasificación de las correlaciones en débiles positivas y negativas  
+
+**Resultado clave:**  
+No se detectaron correlaciones fuertes con el promedio de calificaciones, lo que sugiere que el rendimiento académico depende de múltiples factores combinados.
+
+---
+
+##### Matriz de correlación
+
+- Construcción de la matriz de correlación completa  
+- Filtrado de relaciones con |r| > 0.3  
+- Confirmación de la ausencia de correlaciones fuertes  
+
+---
+
+##### Top de correlaciones más fuertes
+
+- Identificación de las correlaciones absolutas más altas del dataset  
+- Análisis de relaciones negativas débiles entre:
+  - Asistencia a clases y horas extracurriculares  
+  - Horas de estudio y nivel de estrés  
+  - Edad y horas de estudio semanal  
+
+---
+
+##### Análisis de grupos de variables correlacionadas
+
+Se analizaron relaciones internas por bloques conceptuales:
+
+**Variables académicas**
+- Horas de estudio semanal  
+- Asistencia a clases  
+- Promedio de calificaciones  
+
+**Variables de bienestar**
+- Satisfacción con la vida  
+- Nivel de estrés  
+- Horas extracurriculares  
+
+**Variables socioeconómicas**
+- Ingresos familiares  
+- Nivel socioeconómico  
+- Promedio de calificaciones  
+
+Este enfoque permitió una interpretación más estructurada de las relaciones entre variables.
+
+En conjunto, el análisis muestra que el rendimiento académico no está explicado por una única variable aislada, sino por la interacción de múltiples factores, lo que refuerza la necesidad de enfoques multivariados en análisis posteriores.
+
+---
+
+##### Visualización de correlaciones
+
+- Generación de un mapa de calor de la matriz de correlación  
+- Identificación visual de patrones débiles y ausencia de relaciones dominantes  
+
+---
+
+#### Visualizaciones generadas
+
+- Distribución de edades de los estudiantes  
+- Distribución de horas de estudio semanal  
+- Distribución del nivel socioeconómico  
+- Mapa de calor de la matriz de correlación  
+
+---
+
+#### Evidencia
+
+- `eda_estudiantil_dia4.ipynb`  
+- `Evidencia_Dia4_Analisis_Correlaciones.xlsx`  
+- `distribucion_edades_estudiantes.png`  
+- `distribucion_horas_estudio.png`  
+- `distribucion_nivel_socioeconomico.png`  
+- `matriz_correlacion_estudiantil.png`
+
+---
+
 
 ## Herramientas utilizadas
 
@@ -194,10 +316,12 @@ analisis-exploratorio-datos/
 ├── eda_ecommerce_dia1.ipynb  
 ├── eda_empleados_dia2.ipynb  
 ├── eda_financiero_dia3.ipynb  
+├── eda_estudiantil_dia4.ipynb  
 │  
 ├── Evidencia_EDA_Ecommerce.xlsx  
 ├── Evidencia_EDA_Dia2.xlsx  
 ├── Evidencia_Dia3_Analisis_Distribuciones.xlsx  
+├── Evidencia_Dia4_Analisis_Correlaciones.xlsx  
 │  
 ├── distribucion_region.png  
 ├── distribucion_metodo_pago.png  
@@ -213,4 +337,9 @@ analisis-exploratorio-datos/
 │  
 ├── distribucion_montos.png  
 ├── boxplot_montos.png  
-├── distribucion_curtosis_montos.png 
+├── distribucion_curtosis_montos.png  
+│  
+├── distribucion_edades_estudiantes.png  
+├── distribucion_horas_estudio.png  
+├── distribucion_nivel_socioeconomico.png  
+├── matriz_correlacion_estudiantil.png 
