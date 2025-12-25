@@ -23,9 +23,17 @@ El objetivo general del proyecto es **comprender la estructura, calidad, distrib
 
 ---
 
-## Datasets utilizados
+## Alcance y limitaciones
 
-Durante la semana se trabajó con **distintos conjuntos de datos simulados**, cada uno asociado a un objetivo específico dentro del Análisis Exploratorio de Datos (EDA).
+- Todos los datasets utilizados son simulados y no representan datos reales.
+- Los análisis se centran en exploración descriptiva, sin inferencia estadística ni modelamiento.
+- Las conclusiones están condicionadas al contexto y estructura específica de cada dataset.
+
+Estos análisis tienen como objetivo principal el aprendizaje metodológico y no la toma de decisiones reales.
+
+---
+
+## Datasets utilizados
 
 ### Dataset E-commerce (Día 1)
 - Identificadores de pedidos, clientes y productos
@@ -43,9 +51,8 @@ Durante la semana se trabajó con **distintos conjuntos de datos simulados**, ca
 - Departamento
 - Nivel jerárquico
 
-**Nota:** Todos los datasets son simulados y se utilizan exclusivamente con fines académicos.
 
-Adicionalmente, durante los **Días 3 y 4** se utilizaron datasets específicos para el análisis de **distribuciones, valores atípicos y correlaciones**, los cuales se describen en detalle en sus respectivas secciones.
+Adicionalmente, durante los **Días 3, 4 y 5** se trabajó con datasets específicos orientados a distribuciones, correlaciones y análisis ejecutivo, los cuales se describen en detalle en sus respectivas secciones.
 
 ---
 
@@ -124,8 +131,6 @@ El conjunto de datos representa **2000 transacciones financieras** e incluye las
 - Tipo de cliente (Regular, Premium, VIP)
 - Categoría del gasto (Alimentos, Electrónicos, Ropa, Servicios)
 
-**Nota:** El dataset es simulado y se utiliza exclusivamente con fines académicos.
-
 ---
 
 #### Análisis realizados
@@ -195,8 +200,6 @@ El conjunto de datos representa información de estudiantes e incluye las siguie
 - Ingresos familiares  
 - Nivel socioeconómico  
 - Promedio de calificaciones  
-
-**Nota:** El dataset es simulado y se utiliza exclusivamente con fines académicos.
 
 ---
 
@@ -295,6 +298,108 @@ En conjunto, el análisis muestra que el rendimiento académico no está explica
 
 ---
 
+### Día 5 – EDA completo y reporte ejecutivo (Dataset E-commerce)
+
+Durante el **Día 5** se realizó un **Análisis Exploratorio de Datos (EDA) completo y estructurado**, aplicando un **framework metodológico de principio a fin**, con el objetivo de **responder preguntas clave de negocio y comunicar resultados a nivel ejecutivo**.
+
+Este día representa la transición desde un análisis exploratorio técnico hacia una comunicación analítica orientada a la toma de decisiones.
+
+A diferencia de días anteriores, este análisis integra **exploración, síntesis y comunicación**, cerrando el ciclo completo del EDA.
+
+---
+
+#### Dataset utilizado
+
+Se trabajó con un **dataset de e-commerce simulado de 2.500 pedidos**, que incluye información temporal, transaccional y de segmentación de clientes:
+
+- ID del pedido  
+- Fecha del pedido  
+- ID del cliente  
+- Categoría del producto  
+- Precio unitario  
+- Cantidad  
+- Total del pedido  
+- Método de pago  
+- Región  
+- Tipo de cliente (Regular, Premium, VIP)  
+- Variables temporales derivadas (mes, día de la semana)
+
+---
+
+#### Metodología aplicada
+
+El análisis siguió una **metodología completa de EDA**, organizada en las siguientes fases:
+
+1. **Preparación y contexto**
+   - Definición de objetivos analíticos
+   - Comprensión del alcance temporal y segmentación
+
+2. **Inspección inicial**
+   - Dimensiones y estructura del dataset
+   - Tipos de datos
+   - Validación de calidad y ausencia de valores faltantes
+
+3. **Análisis univariado**
+   - Distribución de precios, cantidades y montos
+   - Identificación de rangos y comportamiento central
+
+4. **Análisis bivariado y multivariado**
+   - Comparaciones por tipo de cliente, categoría y región
+   - Análisis temporal de ventas y frecuencia de compra
+   - Evaluación de correlaciones entre variables numéricas
+
+5. **Síntesis y comunicación**
+   - Construcción de un **reporte ejecutivo visual**
+   - Traducción de resultados técnicos a insights accionables
+
+---
+
+#### Principales hallazgos
+
+- El **ticket promedio por pedido es similar** entre clientes Regulares, Premium y VIP.
+- Las **diferencias de ingresos totales** se explican principalmente por la **frecuencia de compra**, no por el monto por pedido.
+- Los **clientes Regulares concentran la mayor parte de los ingresos**, debido a un mayor volumen de pedidos mensuales.
+- La categoría **Deportes** lidera las ventas totales, aunque el mix de categorías se mantiene diversificado.
+- Existen patrones temporales claros en la cantidad de pedidos por mes y por tipo de cliente.
+
+---
+
+#### Reporte ejecutivo
+
+Como cierre del análisis, se generó un **informe ejecutivo en formato PDF**, estructurado en múltiples páginas:
+
+- Página 1: Resumen ejecutivo con métricas clave
+- Página 2 y 3: Evidencia visual y análisis gráfico
+- Se priorizó claridad, jerarquía visual y foco en decisiones de negocio
+
+---
+
+#### Evidencia generada
+
+- `eda_completo_reporte_dia5.ipynb`  
+- `eda_completo_reporte_dia5.pdf`  
+- `Evidencia_Dia5_EDA_Ecommerce.xlsx`  
+- `ventas_tipo_cliente.png`  
+- `ventas_categoria.png`  
+- `pedidos_mes_cliente.png`
+
+---
+
+## Conclusiones generales de la semana
+
+A lo largo de la Semana 1 se aplicaron distintas técnicas de Análisis Exploratorio de Datos (EDA), avanzando desde la inspección básica de datasets hasta la generación de reportes ejecutivos orientados a negocio.
+
+Los principales aprendizajes incluyen:
+
+- Importancia de la calidad y estructura de los datos antes de cualquier análisis avanzado
+- Uso adecuado de medidas estadísticas según la forma de la distribución
+- Identificación y tratamiento conceptual de valores atípicos
+- Interpretación responsable de correlaciones débiles y ausencia de relaciones fuertes
+- Comunicación efectiva de resultados técnicos a audiencias no técnicas
+
+Este enfoque progresivo demuestra la capacidad de transformar datos en conocimiento estructurado, sentando bases sólidas para análisis predictivos y modelamiento en contextos reales.
+
+---
 
 ## Herramientas utilizadas
 
@@ -319,11 +424,15 @@ analisis-exploratorio-datos/
 ├── eda_empleados_dia2.ipynb  
 ├── eda_financiero_dia3.ipynb  
 ├── eda_estudiantil_dia4.ipynb  
+├── eda_completo_reporte_dia5.ipynb  
 │  
 ├── Evidencia_EDA_Ecommerce.xlsx  
 ├── Evidencia_EDA_Dia2.xlsx  
 ├── Evidencia_Dia3_Analisis_Distribuciones.xlsx  
 ├── Evidencia_Dia4_Analisis_Correlaciones.xlsx  
+├── Evidencia_Dia5_EDA_Ecommerce.xlsx  
+│  
+├── eda_completo_reporte_dia5.pdf  
 │  
 ├── distribucion_region.png  
 ├── distribucion_metodo_pago.png  
@@ -344,4 +453,8 @@ analisis-exploratorio-datos/
 ├── distribucion_edades_estudiantes.png  
 ├── distribucion_horas_estudio.png  
 ├── distribucion_nivel_socioeconomico.png  
-├── matriz_correlacion_estudiantil.png 
+├── matriz_correlacion_estudiantil.png  
+│  
+├── ventas_tipo_cliente.png  
+├── ventas_categoria.png  
+├── pedidos_mes_cliente.png
